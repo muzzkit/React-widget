@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 import Convert from "./Convert";
 
-
-
 const options = [
     {
         label: 'Afrikaans',
@@ -40,8 +38,8 @@ const Translate = ( ) => {
             onSelectedChange={setLanguage} 
             options={options} />
             <hr/>
-            <h3 class="ui header">Output</h3>
-            <Convert text={text} />
+            <h3 className="ui header">Output</h3>
+            <Convert text={text} language={language}/>
         </div>
         
     )
